@@ -46,6 +46,8 @@ app.get('/logout', (req, res)=>{
   res.redirect('/')
 })
 
+const PORT = process.env.PORT || 3000
+
 app.listen(3000, ()=>{
   console.log('Server is runnig under port 3000')
 })
